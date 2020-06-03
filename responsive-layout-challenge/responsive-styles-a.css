@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: LightGrey;
+  height: 80px;
+  margin-bottom: 10px;
+}
+/*main div {
+  display:inline-block;
+  position: relative;
+}*/
+.a {
+  background-color: #F00000;
+  width: 70%;
+  height: 420px;
+}
+.b {
+  background-color: orange;
+  width: 70%;
+  height: 420px;
+}
+.c {
+  background-color: yellow;
+  width: 30%;
+  height: 840px;
+  float: right;
+}
+p {
+  padding: 10px;
+  font-size: 18px;
+}
+footer {
+  background-color: LightGrey;
+  height: 80px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+  .a, .b, .c {
+    width: 50%;
+  }
+  header, footer {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .a, .b, .c {
+    float: left;
+    width: 100%;
+    height: 220px;
+  }
+}
