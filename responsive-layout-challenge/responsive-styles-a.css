@@ -7,10 +7,10 @@ header {
   height: 80px;
   margin-bottom: 10px;
 }
-/*main div {
-  display:inline-block;
+main {
   position: relative;
-}*/
+  width: 100%;
+}
 .a {
   background-color: #F00000;
   width: 70%;
@@ -33,8 +33,10 @@ p {
 }
 footer {
   background-color: LightGrey;
+  width: 100%;
   height: 80px;
-  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
 }
 @media screen and (max-width: 992px) {
   .a, .b, .c {
@@ -48,6 +50,9 @@ footer {
   .a, .b, .c {
     float: left;
     width: 100%;
-    height: 220px;
+    height: 300px;
   }
+footer {
+  position: fixed;
+  bottom: 0;
 }
